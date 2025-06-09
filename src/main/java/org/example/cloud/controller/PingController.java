@@ -1,4 +1,4 @@
-package org.example.cloud;
+package org.example.cloud.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

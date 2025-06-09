@@ -1,4 +1,4 @@
-package org.example.health;
+package org.example.cloud.health;
 
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;

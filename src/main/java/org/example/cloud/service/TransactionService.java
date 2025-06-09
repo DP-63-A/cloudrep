@@ -1,2 +1,8 @@
-package org.example.cloud.service;public class TransactionService {
+package org.example.cloud.service;
+
+import org.example.cloud.dto.TransactionDto;
+
+public interface TransactionService {
+    TransactionDto createTransaction(TransactionDto dto);
 }
+
