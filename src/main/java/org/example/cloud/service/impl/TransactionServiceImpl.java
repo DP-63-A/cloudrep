@@ -17,29 +17,6 @@ public class TransactionServiceImpl implements TransactionService {
 
     private final TransactionRepository transactionRepository;
     private final UserRepository userRepository;
-
-    /*@Override
-    public TransactionDto createTransaction(TransactionDto dto) {
-        User user = userRepository.findById(dto.getUserId())
-                .orElseThrow(() -> new IllegalArgumentException("User not found with ID: " + dto.getUserId()));
-
-        Transaction transaction = Transaction.builder()
-                .user(user)
-                .amount(dto.getAmount())
-                .type(dto.getType())
-                .date(LocalDate.now())
-                .build();
-
-        Transaction saved = transactionRepository.save(transaction);
-
-        return TransactionDto.builder()
-                .id(saved.getId())
-                .userId(saved.getUser().getId())
-                .amount(saved.getAmount())
-                .type(saved.getType())
-                .date(saved.getDate().toString())
-                .build();
-    }*/
     @Override
     public TransactionDto createTransaction(TransactionDto dto) {
         User user = userRepository.findById(dto.getUserId())

@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 public class TransactionMessage {
     private Long userId;
     private Double amount;
-    //private String timestamp;
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDate timestamp;
 }

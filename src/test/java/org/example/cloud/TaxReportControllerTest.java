@@ -49,7 +49,6 @@ public class TaxReportControllerTest {
 
         mockMvc.perform(get("/api/tax-reports"))
                 .andExpect(status().isOk())
-                /*.andExpect(jsonPath("$", hasSize(1)));*/
                 .andExpect(jsonPath("$").isArray())
                 .andExpect(jsonPath("$[0].id").exists());
     }

@@ -27,11 +27,8 @@ public class TransactionController {
 
     private final TransactionRepository transactionRepository;
     private final TransactionService transactionService;
-    // Рекомендованный вариант
     private final TransactionMessageProducer producer;
 
-    //@Autowired
-    //private TransactionMessageProducer producer;
     @PostMapping
     public ResponseEntity<TransactionDto> createTransaction(@RequestBody TransactionDto dto) {
         TransactionDto saved = transactionService.createTransaction(dto);

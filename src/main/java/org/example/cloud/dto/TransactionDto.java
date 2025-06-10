@@ -18,7 +18,6 @@ public class TransactionDto {
     private Long userId;
     private BigDecimal amount;
     private String type;
-    //private String date;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 }
