@@ -20,7 +20,7 @@ public class RootController {
     @GetMapping("/docs")
     public ResponseEntity<Void> docs() {
         return ResponseEntity.status(HttpStatus.FOUND)
-                .location(URI.create("/swagger-ui.html"))
+                .location(URI.create("/swagger-ui/index.html"))
                 .build();
     }
 }
