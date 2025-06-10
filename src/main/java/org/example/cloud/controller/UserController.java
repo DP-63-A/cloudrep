@@ -1,5 +1,6 @@
 package org.example.cloud.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.cloud.dto.UserRequestDto;
 import org.example.cloud.dto.UserResponseDto;
@@ -30,7 +31,9 @@ public class UserController {
 
 
     @PostMapping
-    public ResponseEntity<UserResponseDto> createUser(@RequestBody UserRequestDto userRequestDto) {
+    public ResponseEntity<UserResponseDto> createUser(@Valid @RequestBody UserRequestDto userRequestDto) {
+
+        //public ResponseEntity<UserResponseDto> createUser(@RequestBody UserRequestDto userRequestDto) {
         UserResponseDto createdUser = userService.createUser(userRequestDto);
         return ResponseEntity.ok(createdUser);
     }
