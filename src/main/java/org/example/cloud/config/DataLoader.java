@@ -63,14 +63,14 @@ public class DataLoader {
 
         TaxReport r1 = TaxReport.builder()
                 .user(user1)
-                .year("2024")
+                .reportYear("2024")
                 .status("SUBMITTED")
                 .submissionDate(LocalDate.of(2025, 4, 5))
                 .build();
 
         TaxReport r2 = TaxReport.builder()
                 .user(user2)
-                .year("2024")
+                .reportYear("2024")
                 .status("PENDING")
                 .submissionDate(null)
                 .build();
