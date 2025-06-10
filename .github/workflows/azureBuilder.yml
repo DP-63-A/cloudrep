@@ -28,6 +28,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: my-spring-app
+          app-name: MyCloudApp
           publish-profile: ${{ secrets.AZURE_PROFILE }}
           package: build/libs/Cloud-0.0.1-SNAPSHOT.jar
